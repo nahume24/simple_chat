@@ -35,4 +35,5 @@ class ChatClient:
         return sock
 
 if __name__ == "__main__":
-    client = ChatClient('localhost', 4336)
+    from simple_chat.settings import SERVER_HOST, SERVER_PORT
+    client = ChatClient(SERVER_HOST, SERVER_PORT)

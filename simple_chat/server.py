@@ -50,5 +50,6 @@ class ChatServer:
 
 
 if __name__ == "__main__":
-    server = ChatServer('localhost', 4336)
+    from simple_chat.settings import SERVER_HOST, SERVER_PORT
+    server = ChatServer(SERVER_HOST, SERVER_PORT)
     server.run()
